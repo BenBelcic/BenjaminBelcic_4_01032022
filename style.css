@@ -90,7 +90,12 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background-color: rgba(55, 55, 55, .7);
+    background-size: 280px 280px;
+}
+
+.texture-paper-3::before {
+  
     background-size: 280px 280px;
 }
 
@@ -99,7 +104,11 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: black;
+}
+
+a {
+    text-decoration: underline;
 }
 
 .d-bloc button:hover {
@@ -132,7 +141,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: black;
 }
 
 .d-bloc .a-btn:hover,
@@ -230,7 +239,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: black;
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -521,7 +530,7 @@ button {
 }
 
 .showScrollTop {
-    font-size: 14px;
+    font-size: 18px;
     opacity: 1;
 }
 
@@ -646,8 +655,9 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: black;
 }
+
 
 .container {
     max-width: 1000px;
@@ -672,7 +682,8 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
+    color: #000000;
 }
 
 
@@ -727,7 +738,11 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: black!important;
+}
+
+.black {
+    color: #000000;
 }
 
 .portfolio-thumb {
@@ -758,21 +773,27 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #F6AF8E;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #F6AF8E!important;
+}
+
+.tc-black {
+    color: #000000;
+    font-family: "helvetica";
+    font-weight: 400;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    background: #F6AF8E;
+    color: black!important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956!important;
-    color: #FFFFFF!important;
+    color: black!important;
 }
 
 .ltc-white {
@@ -784,7 +805,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #F6AF8E!important;
 }
 
 .ltc-atomic-tangerine:hover {
@@ -933,7 +954,7 @@ h4 {
         background: rgba(0, 0, 0, .8);
     }
     #hero-bloc .navbar .nav a {
-        color: rgba(255, 255, 255, .6);
+        color: black;
     }
     .hero {
         padding: 50px 0;
