@@ -10,7 +10,7 @@ body {
 
 a,
 button {
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 
 a:hover {
@@ -41,11 +41,6 @@ button:hover {
     -o-background-size: cover;
     background-size: cover;
     position: relative;
-}
-
-.bloc .container {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .bloc-lg {
@@ -271,12 +266,9 @@ button:hover {
     border-color: rgba(0, 0, 0, .3);
 }
 
-.voffset {
-    margin-top: 30px;
-}
 
 .voffset-lg {
-    margin-top: 80px;
+    margin-top: 3em;
 }
 
 .row-no-gutters {
@@ -290,9 +282,6 @@ button:hover {
     padding-left: 0;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
-}
 
 .navbar {
     margin-bottom: 0;
@@ -812,7 +801,8 @@ li a:hover {
 }
 
 .col-sm-4 {
-    width: 90%;
+    margin: 3em 1%;
+    width: 30%;
 }
 
 .bold-link {
@@ -876,7 +866,8 @@ li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-right: 5px;
+    padding:0 px;
+    
 }
 
 .ltc-white {
@@ -888,7 +879,18 @@ li a:hover {
     color: white;
 }
 
+label{
+    color: #FFF;
+}
 
+.col-sm-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    width: 100%;
+    padding: 1em;
+}
 
 .icon-dark-slate-blue {
     color: #364577;
@@ -942,10 +944,10 @@ li a:hover {
     }
 }
 
-@media (min-width:400px) and (max-width: 768px) {
+@media (min-width:361px) and (max-width: 768px) {
     .portfolio-thumb {
-        width: 190px;
-        height: 190px;
+        width: 170px;
+        height: 170px;
     }
 }
 
@@ -983,7 +985,7 @@ li a:hover {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1067,7 +1069,7 @@ li a:hover {
         overflow:hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
-        min-width: 120px;
+        min-width: 100%;
     }
 
     .navbar-collapse.in {
@@ -1132,17 +1134,10 @@ li a:hover {
         display: none;
     }
 
-    .voffset {
-        margin-top: 5px;
-    }
-
     .voffset-md {
         margin-top: 20px;
     }
 
-    .voffset-lg {
-        margin-top: 30px;
-    }
 
     form {
         padding: 5px;
@@ -1162,6 +1157,11 @@ li a:hover {
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
+    }
+
+    .col-sm-4 {
+        margin: auto;
+        width: 100%;
     }
 
 }
@@ -1220,5 +1220,11 @@ li a:hover {
 
     .b-parallax {
         background-attachment: fixed;
+    }
+}
+
+@media (max-width: 540px){
+    #bloc-5-cta{
+        background-image: none;
     }
 }
