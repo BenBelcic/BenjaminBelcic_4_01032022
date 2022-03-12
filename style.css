@@ -14,12 +14,12 @@ button {
 }
 
 a:hover {
-    text-decoration:underline;
+    text-decoration: underline;
     cursor: pointer;
 }
 
 button:hover {
-    text-decoration:underline;
+    text-decoration: underline;
 }
 
 #page-loading-blocs-notifaction {
@@ -103,7 +103,7 @@ button:hover {
 .d-bloc .icon-rounded,
 .d-bloc .icon-semi-rounded-a,
 .d-bloc .icon-semi-rounded-b {
-    border-color: #0A325F;
+    border-color: black;
 }
 
 .d-bloc .divider-h span {
@@ -124,33 +124,18 @@ button:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: #0A325F;
+    color: black;
 }
 
 
 
-.d-bloc .a-btn:hover,
-.d-bloc .navbar a:hover,
-.d-bloc .navbar-brand:hover,
-.d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
-.d-bloc a:hover .icon-lg,
-.d-bloc a:hover .icon-xl,
-.d-bloc h1 a:hover,
-.d-bloc h2 a:hover,
-.d-bloc h3 a:hover,
-.d-bloc h4 a:hover,
-.d-bloc h5 a:hover,
-.d-bloc h6 a:hover,
-.d-bloc p a:hover {
-    color: rgba(255, 255, 255, 1);
-}
 
-.sous-titre{
+
+.sous-titre {
     color: rgb(70, 66, 66);
 }
 
-.sous-titre, .citation{
+.sous-titre, .citation {
     font-family: "helvetica";
     font-weight: 500;
     font-size: 26px;
@@ -163,13 +148,13 @@ button:hover {
 }
 
 .signature {
-    font-weight:lighter;
-    font-size: 20px;
-    color: rgb(70, 66, 66);
+    font-weight: lighter;
+    font-size: 18px;
+    color: rgb(77, 73, 73);
 }
 
-.realisation{
-    font-weight:lighter;
+.realisation {
+    font-weight: lighter;
     font-size: 24px;
     color: rgb(70, 66, 66);
 }
@@ -277,6 +262,7 @@ button:hover {
     color: rgba(0, 0, 0, .6);
 }
 
+
 .d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover,
 .l-bloc .btn-wire,
@@ -298,8 +284,8 @@ button:hover {
     margin-left: auto;
 }
 
-.row.row-no-gutters > [class^="col-"],
-.row.row-no-gutters > [class*=" col-"] {
+.row.row-no-gutters>[class^="col-"],
+.row.row-no-gutters>[class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
 }
@@ -343,13 +329,13 @@ button:hover {
     z-index: 1;
 }
 
-.nav > li {
+.nav>li {
     float: left;
     margin-top: 4px;
     font-size: 16px;
 }
 
-.navbar-nav .open .dropdown-menu > li > a {
+.navbar-nav .open .dropdown-menu>li>a {
     text-align: inherit;
 }
 
@@ -387,26 +373,32 @@ button:hover {
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
+
+    .nav>li .dropdown-menu a,
+    .nav>li .dropdown-menu a:hover {
         color: #484848;
     }
+
     .nav-invert .site-navigation {
         left: 0;
         right: 0;
     }
+
     .nav-center {
         text-align: center;
     }
+
     .nav-center .navbar-header {
         width: 100%;
     }
+
     .nav-center .navbar-header,
     .nav-center .navbar-brand,
-    .nav-center .nav > li {
+    .nav-center .nav>li {
         float: none;
         display: inline-block;
     }
+
     .nav-center .site-navigation {
         position: relative;
         width: 100%;
@@ -414,13 +406,14 @@ button:hover {
         margin-right: 0px;
         margin-top: 20px;
     }
+
     .nav-center.mini-nav .navbar-toggle {
         float: none;
         margin: 10px auto 0;
     }
 }
 
-.nav > li > .dropdown a {
+.nav>li>.dropdown a {
     background: none;
     display: block;
     padding: 14px 15px;
@@ -732,6 +725,21 @@ h3 {
     color: #333333;
 }
 
+
+
+.tight-width-whitespace, .ready {
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.col-sm-13 {
+    width: auto!important;
+    background-color: #4d4d4d;
+    padding: 1em;
+    border-radius: 2em;
+}
+
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
@@ -749,11 +757,6 @@ h4 {
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
-}
-
-.white {
-    color: black;
-    background-color: rgba(219, 219, 129, 0.04);
 }
 
 .black {
@@ -774,11 +777,11 @@ h4 {
 }
 
 .footer {
-    background-color: #F6AF8E;
+    background-color: #F3976C;
 }
 
 .footer-links {
-    display:flex;
+    display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
@@ -788,7 +791,6 @@ li {
     display: flex;
     align-items: center;
     height: 48px;
-    text-decoration: underline;
     border-radius: 5px;
     justify-content: center;
 }
@@ -798,17 +800,18 @@ li a {
     justify-content: center;
     align-items: center;
     height: 48px;
-    color:#0A325F;
+    color: black;
 }
 
-li a:hover{
+li a:hover {
     transform: scale(1.35);
-    background-color: #8A340D;
-    color: white;
+    background-color: rgb(238, 238, 238);
+    color: black;
     border-radius: 10px;
+    text-decoration: underline;
 }
 
-.col-sm-4{
+.col-sm-4 {
     width: 90%;
 }
 
@@ -822,50 +825,49 @@ li a:hover{
 }
 
 .tc-white {
-    color: #F6AF8E;
-    font-size:30px;
-    background-color: rgba(0, 0, 0, .005);
+    color: #F3976C;
+    font-size: 30px;
 }
+
 .sociallink {
     font-size: 190%;
-    color: #0A325F!important;
+    color: black !important;
 }
 
 
-.col-sm-3:hover{
+.col-sm-3:hover {
     transform: scale(1.2);
     transition: all .5s ease-in-out;
-    background-color: #8A340D;
+    background-color: rgb(238, 238, 238);
     border-radius: 10px;
-    color: white;
-}
-
-.col-sm-3:hover .reseaux{
-    color: white;
+    color: black;
     text-decoration: underline;
 }
 
-.partenaires{
+.col-sm-3:hover .reseaux {
+    text-decoration: underline;
+}
+
+.partenaires {
     font-size: larger;
     font-weight: 500;
 }
 
 .tc-black {
-    color: #000000;
+    color: white;
     font-family: "helvetica";
     font-size: 30px;
     font-weight: 400;
-    background-color: rgba(219, 219, 129, 0.004);
 }
 
 .btn-atomic-tangerine {
-    background: #F6AF8E;
+    background: #F3976C;
     color: black;
 }
 
 .btn-atomic-tangerine:hover {
     background: #8A340D;
-    color: white!important;
+    color: white !important;
     text-decoration: underline;
 }
 
@@ -874,23 +876,19 @@ li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-right: 5px;
 }
 
 .ltc-white {
     color: #FFFFFF;
 }
 
-.ltc-white:hover {
-    color: #cccccc;
+.white {
+    font-size: 16px;
+    color: white;
 }
 
-.ltc-atomic-tangerine {
-    color: #F6AF8E;
-}
 
-.ltc-atomic-tangerine:hover {
-    color: #c27956;
-}
 
 .icon-dark-slate-blue {
     color: #364577;
@@ -898,7 +896,7 @@ li a:hover{
 }
 
 .text-center a p {
-    color:#0A325F;
+    color: black;
 }
 
 @media (max-width: 1024px) {
@@ -906,6 +904,7 @@ li a:hover{
         padding-left: 20px;
         padding-right: 20px;
     }
+
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
     .bloc-tile-3.full-width-bloc .container,
@@ -913,31 +912,40 @@ li a:hover{
         padding-left: 0;
         padding-right: 0;
     }
+
     .texture-paper {
         background-repeat: no-repeat;
     }
-    
+
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
     }
+
     .nav-center.navbar .nav {
         max-width: 100%
     }
 
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
+    }
+}
+
+@media (min-width:400px) and (max-width: 768px) {
+    .portfolio-thumb {
+        width: 190px;
+        height: 190px;
     }
 }
 
@@ -945,23 +953,28 @@ li a:hover{
     .container {
         width: 100%;
     }
+
     .b-parallax {
         background-attachment: scroll;
     }
+
     .page-container,
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
     }
+
     .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
     }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
     }
+
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
@@ -975,6 +988,7 @@ li a:hover{
         overflow-x: hidden;
         position: relative;
     }
+
     h1,
     h2,
     h3,
@@ -986,25 +1000,30 @@ li a:hover{
         padding-left: 10px;
         padding-right: 10px;
     }
+
     .b-parallax {
         background-attachment: scroll;
     }
+
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none;
     }
+
     .navbar.row {
         margin-left: 0;
         margin-right: 0;
     }
+
     .site-navigation {
         position: inherit;
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
     }
-    .nav > li {
+
+    .nav>li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
         background: rgba(0, 0, 0, .05);
@@ -1012,9 +1031,11 @@ li a:hover{
         padding-left: 15px;
         width: 100%;
     }
-    .nav > li:hover {
+
+    .nav>li:hover {
         background: rgba(0, 0, 0, .08);
     }
+
     .dropdown .dropdown a .caret {
         float: none;
         margin: 5px 0 0 10px;
@@ -1023,51 +1044,77 @@ li a:hover{
         border-right-color: transparent;
         border-left-color: transparent;
     }
+
     #hero-bloc .navbar .nav {
         background: rgba(0, 0, 0, .8);
     }
+
     #hero-bloc .navbar .nav a {
         color: black;
     }
+
     .hero {
         padding: 50px 0;
     }
+
     .hero-nav {
         left: -1px;
         right: -1px;
     }
+
     .navbar-collapse {
         padding: 0;
-        overflow-x: hidden;
+        overflow:hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
+        min-width: 120px;
     }
+
+    .navbar-collapse.in {
+        overflow: hidden;
+    }
+
+    .navbar-nav > li > a {
+        padding-left: 0;
+        line-height: 20px;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+
     .navbar-brand img {
         max-height: 40px;
         width: auto;
     }
+
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
     }
+
     .nav-invert .navbar-toggle {
         float: left;
         margin-left: 10px;
     }
+
     .bloc {
         padding-left: 0;
         padding-right: 0;
     }
+
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
         padding: 40px 0;
     }
+
     .bloc-sm,
     .bloc-md {
         padding-left: 0;
         padding-right: 0;
     }
+
     .bloc-tile-2 .container,
     .bloc-tile-3 .container,
     .bloc-tile-4 .container,
@@ -1076,33 +1123,42 @@ li a:hover{
         padding-left: 0;
         padding-right: 0;
     }
+
     .a-block {
         padding: 0 10px;
     }
+
     .btn-dwn {
         display: none;
     }
+
     .voffset {
         margin-top: 5px;
     }
+
     .voffset-md {
         margin-top: 20px;
     }
+
     .voffset-lg {
         margin-top: 30px;
     }
+
     form {
         padding: 5px;
     }
+
     .close-lightbox {
         display: inline-block;
     }
+
     .blocsapp-device-iphone5 {
         background-size: 216px 425px;
         padding-top: 60px;
         width: 216px;
         height: 425px;
     }
+
     .blocsapp-device-iphone5 img {
         width: 180px;
         height: 320px;
@@ -1120,11 +1176,17 @@ li a:hover{
         background: url(img/agence-la-panthere-mobile.webp);
         max-width: 100%;
     }
-    
+
     .texture-paper-3 {
         background: url(img/image-de-presentation-mobile.webp);
         max-width: 100%;
     }
+
+    .portfolio-thumb {
+        width: 148px;
+        height: 148px;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -1137,7 +1199,7 @@ li a:hover{
     .texture-paper {
         background: url(img/agence-la-panthere-tab.webp);
     }
-    
+
     .texture-paper-3 {
         background: url(img/image-de-presentation-tab.webp);
     }
@@ -1149,12 +1211,13 @@ li a:hover{
         background: url(img/agence-la-panthere.webp);
         background-position: -20px 10%;
     }
-    
+
     .texture-paper-3 {
         background: url(img/image-de-presentation.webp);
         background-size: cover;
         background-position: top;
     }
+
     .b-parallax {
         background-attachment: fixed;
     }
