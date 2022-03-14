@@ -1384,7 +1384,7 @@ th {
 }
 
 html {
-    font-size: 10px;
+    font-size: 12px;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
@@ -4286,7 +4286,7 @@ tbody.collapse.in {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px dashed;
-    border-top: 4px solid;
+    border-top: 4px solid\9;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent
 }
@@ -4373,7 +4373,7 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
 }
 
 .open>.dropdown-menu {
@@ -4844,13 +4844,15 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav>li>a {
     position: relative;
     display: block;
-    padding: 10px 15px
+    padding: 10px 10px
 }
 
 .nav>li>a:focus,
 .nav>li>a:hover {
     text-decoration: none;
-    background-color: #eee
+    background-color: #EEEEED!important;
+    color: black!important;
+    border-radius: 15px;
 }
 
 .nav>li.disabled>a {
@@ -5238,7 +5240,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-top: 4px
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .navbar-toggle {
         display: none
     }
@@ -7795,7 +7797,9 @@ button.close {
 .center-block {
     display: block;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    width: 100px;
+    height: 100px;
 }
 
 .pull-right {
