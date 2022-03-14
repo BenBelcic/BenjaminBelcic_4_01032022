@@ -13,12 +13,12 @@ button {
     transition: all .1s ease-in-out;
 }
 
-a:hover {
+a:hover, a:focus {
     text-decoration: underline;
     cursor: pointer;
 }
 
-button:hover {
+button:hover, button:focus {
     text-decoration: underline;
 }
 
@@ -89,7 +89,7 @@ button:hover {
     right: 0;
 }
 
-.d-bloc button:hover {
+.d-bloc button:hover, .d-bloc button:focus {
     color: rgba(255, 255, 255, .9);
 }
 
@@ -159,7 +159,7 @@ button:hover {
 }
 
 .d-bloc .btn-wire,
-.d-bloc .btn-wire:hover {
+.d-bloc .btn-wire:hover, .d-bloc .btn-wire:focus {
     color: rgba(255, 255, 255, 1);
     border-color: rgba(255, 255, 255, 1);
 }
@@ -168,7 +168,8 @@ button:hover {
     color: rgba(0, 0, 0, .5);
 }
 
-.d-bloc .panel button:hover {
+.d-bloc .panel button:hover,
+.d-bloc .panel button:focus {
     color: rgba(0, 0, 0, .7);
 }
 
@@ -184,12 +185,14 @@ button:hover {
     color: rgba(0, 0, 0, .6);
 }
 
-.d-bloc .panel .a-btn:hover {
+.d-bloc .panel .a-btn:hover,
+.d-bloc .panel .a-btn:focus {
     color: rgba(0, 0, 0, 1);
 }
 
 .d-bloc .panel .btn-wire,
-.d-bloc .panel .btn-wire:hover {
+.d-bloc .panel .btn-wire:hover,
+.d-bloc .panel .btn-wire:focus {
     color: rgba(0, 0, 0, .7);
     border-color: rgba(0, 0, 0, .3);
 }
@@ -200,7 +203,9 @@ button:hover {
 }
 
 .d-bloc .panel button:hover,
-.l-bloc button:hover {
+.l-bloc button:hover,
+.d-bloc .panel button:focus,
+.l-bloc button:focus {
     color: rgba(0, 0, 0, .7);
 }
 
@@ -249,7 +254,22 @@ button:hover {
 .l-bloc h4 a:hover,
 .l-bloc h5 a:hover,
 .l-bloc h6 a:hover,
-.l-bloc p a:hover {
+.l-bloc p a:hover,
+.d-bloc .panel .a-btn:focus,
+.l-bloc .a-btn:focus,
+.l-bloc .navbar a:focus,
+.l-bloc .navbar-brand:focus,
+.l-bloc a:focus .icon-sm,
+.l-bloc a:focus .icon-md,
+.l-bloc a:focus .icon-lg,
+.l-bloc a:focus .icon-xl,
+.l-bloc h1 a:focus,
+.l-bloc h2 a:focus,
+.l-bloc h3 a:focus,
+.l-bloc h4 a:focus,
+.l-bloc h5 a:focus,
+.l-bloc h6 a:focus,
+.l-bloc p a:focus {
     color: rgba(0, 0, 0, 1);
 }
 
@@ -260,8 +280,10 @@ button:hover {
 
 .d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover,
+.d-bloc .panel .btn-wire:focus,
 .l-bloc .btn-wire,
-.l-bloc .btn-wire:hover {
+.l-bloc .btn-wire:hover,
+.l-bloc .btn-wire:focus {
     color: rgba(0, 0, 0, .7);
     border-color: rgba(0, 0, 0, .3);
 }
@@ -334,7 +356,8 @@ button:hover {
     border: 0px;
 }
 
-.navbar-toggle:hover {
+.navbar-toggle:hover,
+.navbar-toggle:focus {
     background: transparent;
 }
 
@@ -364,7 +387,8 @@ button:hover {
     }
 
     .nav>li .dropdown-menu a,
-    .nav>li .dropdown-menu a:hover {
+    .nav>li .dropdown-menu a:hover,
+    .nav>li .dropdown-menu a:focus {
         color: #484848;
     }
 
@@ -536,7 +560,8 @@ a[data-lightbox] {
     text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before,
+a[data-lightbox]:focus::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
@@ -554,7 +579,8 @@ a[data-lightbox]:hover::before {
     -webkit-transform: translateY(-50%);
 }
 
-a[data-lightbox]:hover img {
+a[data-lightbox]:hover img,
+a[data-lightbox]:focus img {
     opacity: 0.6;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
@@ -602,7 +628,10 @@ a[data-lightbox]:hover img {
 
 .close-lightbox:hover,
 .next-lightbox:hover,
-.prev-lightbox:hover {
+.prev-lightbox:hover,
+.close-lightbox:focus,
+.next-lightbox:focus,
+.prev-lightbox:focus {
     opacity: 1.0;
     color: #FFF;
 }
@@ -717,13 +746,13 @@ h3 {
 
 
 .tight-width-whitespace, .ready {
-    display:flex;
+    display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
 .col-sm-13 {
-    width: auto!important;
+    width: auto !important;
     background-color: #4d4d4d;
     padding: 1em;
     border-radius: 2em;
@@ -759,6 +788,7 @@ h4 {
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
+    background-color: white;
 }
 
 .avatar {
@@ -792,7 +822,8 @@ li a {
     color: black;
 }
 
-li a:hover {
+li a:hover,
+li a:focus {
     transform: scale(1.35);
     background-color: rgb(238, 238, 238);
     color: black;
@@ -825,7 +856,8 @@ li a:hover {
 }
 
 
-.col-sm-3:hover {
+.col-sm-3:hover,
+.col-sm-3:focus {
     transform: scale(1.2);
     transition: all .5s ease-in-out;
     background-color: rgb(238, 238, 238);
@@ -834,7 +866,10 @@ li a:hover {
     text-decoration: underline;
 }
 
-.col-sm-3:hover .reseaux {
+
+
+.col-sm-3:hover .reseaux,
+.col-sm-3:focus .reseaux {
     text-decoration: underline;
 }
 
@@ -855,7 +890,8 @@ li a:hover {
     color: black;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
     background: #8A340D;
     color: white !important;
     text-decoration: underline;
@@ -866,8 +902,8 @@ li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:0 px;
-    
+    padding: 0 px;
+
 }
 
 .ltc-white {
@@ -879,15 +915,15 @@ li a:hover {
     color: white;
 }
 
-label{
+label {
     color: #FFF;
 }
 
-.col-sm-6{
+.col-sm-6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    color:white;
+    color: white;
     width: 100%;
     padding: 1em;
 }
@@ -1034,7 +1070,8 @@ label{
         width: 100%;
     }
 
-    .nav>li:hover {
+    .nav>li:hover,
+    .nav>li:focus {
         background: rgba(0, 0, 0, .08);
     }
 
@@ -1066,7 +1103,7 @@ label{
 
     .navbar-collapse {
         padding: 0;
-        overflow:hidden;
+        overflow: hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
         min-width: 100%;
@@ -1076,7 +1113,7 @@ label{
         overflow: hidden;
     }
 
-    .navbar-nav > li > a {
+    .navbar-nav>li>a {
         padding-left: 0;
         line-height: 20px;
         display: flex;
@@ -1172,6 +1209,7 @@ label{
         padding-right: 0;
     }
 
+
     .texture-paper {
         background: url(img/agence-la-panthere-mobile.webp);
         max-width: 100%;
@@ -1223,8 +1261,8 @@ label{
     }
 }
 
-@media (max-width: 540px){
-    #bloc-5-cta{
+@media (max-width: 540px) {
+    #bloc-5-cta {
         background-image: none;
     }
 }
